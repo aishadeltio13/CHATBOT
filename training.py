@@ -60,15 +60,15 @@ train_x = np.array(list(training[:, 0]))
 train_y = np.array(list(training[:, 1]))
 
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), activation="relu"))
-model.add(Dropout(0.5))
-model.add(Dense(64, activation="relu"))
-model.add(Dropout(0.5))
+model.add(Dense(256, input_shape=(len(train_x[0]),), activation="relu"))
+model.add(Dropout(0.3))
+model.add(Dense(128, activation="relu"))
+model.add(Dropout(0.3))
 model.add(Dense(len(train_y[0]), activation="softmax"))
 
-sgd = SGD(learning_rate=0.001, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(learning_rate=0.005, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 train_process = model.fit(
-np.array(train_x), np.array(train_y), epochs=100, batch_size=5, verbose=1)
+np.array(train_x), np.array(train_y), epochs=400, batch_size=5, verbose=1)
 
-model.save("chatbot_model.h5", train_process)
+model.save("chatbot_model.keras")

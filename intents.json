@@ -1,14 +1,29 @@
 {"intents":[
     {
-        "tag": "saludo",
-        "patterns":["Hola", "¿Qué tal?", "¿Cómo estás?", "Buenos días", "Buenas tardes"],
-        "responses":["¡Hola! ¿En qué puedo ayudarte?", "¡Saludos! ¿Cómo puedo asistirte hoy?", "¡Hola! ¿Qué necesitas?"]
-    },
-    {
-        "tag": "nombre",
-        "patterns":["como es tu nombre", "como te llamas"],
-        "responses":["Me llamo Aisha", "Mi nombre es Aisha"]
-    }
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "What's up?"],
+            "responses": ["Hi there! How can I help you today?", "Hello! What can I do for you?", "Hey! How’s it going?"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["What is your name?", "Who are you?", "What's your name?"],
+            "responses": ["My name is Aisha.", "You can call me Aisha.", "I'm Aisha, your virtual assistant."]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "Goodbye", "See you later", "Talk to you soon"],
+            "responses": ["Goodbye! Have a great day!", "See you soon!", "Take care!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Thanks a lot", "Appreciate it"],
+            "responses": ["You're welcome!", "No problem!", "Happy to help!"]
+        },
+        {
+            "tag": "help",
+            "patterns": ["I need help", "Can you help me?", "I need some assistance", "Help me please"],
+            "responses": ["Of course! What do you need help with?", "Sure! Tell me what you’d like to do.", "I'm here to help — what’s the issue?"]
+        }
 
 ]
 }
