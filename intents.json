@@ -1,29 +1,171 @@
-{"intents":[
+{
+  "intents": [
     {
-            "tag": "greeting",
-            "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "What's up?"],
-            "responses": ["Hi there! How can I help you today?", "Hello! What can I do for you?", "Hey! How’s it going?"]
-        },
-        {
-            "tag": "name",
-            "patterns": ["What is your name?", "Who are you?", "What's your name?"],
-            "responses": ["My name is Aisha.", "You can call me Aisha.", "I'm Aisha, your virtual assistant."]
-        },
-        {
-            "tag": "goodbye",
-            "patterns": ["Bye", "Goodbye", "See you later", "Talk to you soon"],
-            "responses": ["Goodbye! Have a great day!", "See you soon!", "Take care!"]
-        },
-        {
-            "tag": "thanks",
-            "patterns": ["Thanks", "Thank you", "Thanks a lot", "Appreciate it"],
-            "responses": ["You're welcome!", "No problem!", "Happy to help!"]
-        },
-        {
-            "tag": "help",
-            "patterns": ["I need help", "Can you help me?", "I need some assistance", "Help me please"],
-            "responses": ["Of course! What do you need help with?", "Sure! Tell me what you’d like to do.", "I'm here to help — what’s the issue?"]
-        }
-
-]
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good afternoon", 
+        "Hi there", "Hey Aisha", "Hello chatbot"
+      ],
+      "responses": [
+        "Hello! 👋 Welcome to our website.",
+        "Hi there! How can I assist you today?",
+        "Hey! Nice to have you here — what are you looking for?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?", "Who are you?", "What's your name?", 
+        "Tell me your name", "Who am I talking to?", "Who built you?"
+      ],
+      "responses": [
+        "My name is Aisha 💙 — I’m your virtual assistant.",
+        "You can call me Aisha, your personal web assistant.",
+        "I'm Aisha! I’m here to help you navigate and find what you need."
+      ]
+    },
+    {
+      "tag": "about_website",
+      "patterns": [
+        "What is this website about?", "What do you do here?", "What can I find on this site?", 
+        "Tell me about this page", "What is this site for?"
+      ],
+      "responses": [
+        "This website provides information about our services, products, and latest updates.",
+        "You can explore our products, learn about our team, and contact us directly here.",
+        "We’re here to help you discover what we offer and how we can assist you."
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer?", "Tell me about your services", "What do you provide?", 
+        "Can you describe your services?", "What kind of help can I get here?"
+      ],
+      "responses": [
+        "We offer a range of services designed to meet your needs. Would you like me to list them?",
+        "We provide professional and personalized services — what are you interested in?",
+        "You can find details about all our services in the 'Services' section of the website."
+      ]
+    },
+    {
+      "tag": "products",
+      "patterns": [
+        "What products do you have?", "Show me your products", "Can I buy something here?", 
+        "Do you sell anything?", "What do you offer?"
+      ],
+      "responses": [
+        "You can browse our products on the 'Products' page — would you like me to show you the link?",
+        "We offer a variety of products depending on your needs. What are you looking for?",
+        "Sure! Check out our catalog for more details."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you?", "I need to get in touch", "How do I reach customer support?", 
+        "Can I speak with someone?", "Do you have an email or phone number?"
+      ],
+      "responses": [
+        "You can contact us through the 'Contact' page 📩 or send us an email at support@yourdomain.com.",
+        "Our team is always happy to help! You can reach us via the contact form or email.",
+        "You can get in touch with us using the 'Contact Us' section of the website."
+      ]
+    },
+    {
+      "tag": "faq",
+      "patterns": [
+        "I have a question", "I have a problem", "Can you answer some questions?", 
+        "Do you have a FAQ?", "Where can I find more information?"
+      ],
+      "responses": [
+        "Sure! You can check our FAQ section for quick answers to common questions.",
+        "I’d be happy to help — what’s your question?",
+        "We have a detailed FAQ page that covers most topics!"
+      ]
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "How much does it cost?", "What are your prices?", "Do you have a price list?", 
+        "How much do you charge?", "What are your plans?"
+      ],
+      "responses": [
+        "You can view our pricing plans on the 'Pricing' page 💰.",
+        "Our pricing depends on the service or product — would you like me to show you the pricing section?",
+        "We offer several plans to fit different needs. Check out the 'Pricing' area for details."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help", "Can you help me?", "I have an issue", "I need assistance", 
+        "My account isn't working", "Something’s wrong"
+      ],
+      "responses": [
+        "I’m here to help! Can you tell me what seems to be the issue?",
+        "No worries — let’s sort this out together. What problem are you experiencing?",
+        "You can also reach our support team directly via the 'Help' or 'Contact' section."
+      ]
+    },
+    {
+      "tag": "navigation",
+      "patterns": [
+        "Where can I find your products?", "How do I get to the contact page?", 
+        "Show me the services section", "How do I navigate the site?", 
+        "Can you take me to the home page?"
+      ],
+      "responses": [
+        "Sure! You can find the navigation links at the top of the website.",
+        "I can guide you — which page would you like to visit?",
+        "You can go to the section you need using the main menu above."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?", "What’s your address?", "Where is your office?", 
+        "Do you have a physical location?", "Where can I find you?"
+      ],
+      "responses": [
+        "Our main office is located in Valencia, Spain 🇪🇸.",
+        "You can find our address and map on the 'Contact' page.",
+        "We’re based in Valencia — but we work with clients worldwide!"
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I want to leave feedback", "Can I give a review?", "Where can I share my opinion?", 
+        "How can I send feedback?", "I want to rate your service"
+      ],
+      "responses": [
+        "We’d love to hear your thoughts! You can leave feedback on our 'Contact' page.",
+        "Your opinion matters to us 💙 You can share it through our feedback form.",
+        "Thank you for wanting to share your experience! Visit the 'Feedback' section to do so."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "Talk to you soon", "Take care"
+      ],
+      "responses": [
+        "Goodbye! Thanks for visiting our website 👋",
+        "See you soon! Have a wonderful day 🌸",
+        "Bye! Come back anytime!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "Thanks a lot", "Appreciate it", "Thanks for the help"
+      ],
+      "responses": [
+        "You're very welcome! 😊",
+        "No problem at all — happy to help!",
+        "Glad I could assist!"
+      ]
+    }
+  ]
 }
